@@ -11,7 +11,7 @@ int main() {
     celsius = lower;
     printf("---- Celsius to Fahrenheit ----\n");
     while (celsius <= upper) {
-        fahr = (celsius / (5.0/9.0)) + 32.0;
+        fahr = (celsius / (5.0/9.0)) + 32.0; /* division slow but compiler probably optimizes this for me */
         printf("%3.0f\t%6.1f\n", celsius, fahr);
         celsius = celsius + step;
     }
